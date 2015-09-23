@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap css -->
+    <link rel="stylesheet" href="util/bootstrap.css">
+    <link rel="util/navbar-static-top.css" rel="stylesheet">
+    
+    <title>David C. Wallace</title>
+  </head>
+  
+<body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"    
+data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">David C. Wallace</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-4">
+        <h2>
+        What's that cool picture?
+        </h2>
+          <p>
+          The image at the bottom of the screen is a slightly cropped and edited version of the plot shown to the right. Each line is a collection of optical absorbance measurements taken across a wide range of wavelengths of light, and is used track the progress over time of a chemical reaction in solution. In this case, the reaction is the charging of a particular battery material. Yes, you can "see" a battery charging (if you set up the experiment properly)! The amount of time elapsed after the start of the reaction is represented by a change in line color from dark blue to dark red. <a href="https://github.com/dvdwllc/plotSpectra">Click here</a> to see how I created this plot using Python and Matplotlib.
+          </p>
+        </div>
+        <div class="col-md-8">
+          <img src='img/spectra_graph.png' width='450' height='375' align=center border='2px black'>
+       </div>
+        </div>
+      </div>
+<a href="spectra.html"><img src='img/drawing.png' width='400' height='175' alt="What's this cool picture?"></a>
+  
+  <script src="util/jquery-2.1.3.min.js"></script>
+    <script src="util/bootstrap.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="util/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
