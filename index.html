@@ -1,90 +1,185 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap css -->
-    <link rel="stylesheet" href="util/bootstrap.css">
-    <link rel="util/navbar-static-top.css" rel="stylesheet">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
     <title>David C. Wallace</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
   </head>
-  
-<body>
 
-  <nav class="navbar navbar-default navbar-static-top">
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"    
-data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand">David C. Wallace</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-i-cursor"></i>dvdwllc</a>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="research.html">Research</a></li>
-              <li><a href="publications.html">Publications</a></li>
-              <li><a href="resources.html">Resources</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-  </nav>
-
-
-<div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Welcome!</h2>
-            <p>
-              I am a graduate student studying materials chemistry and physics in the <a href='http://occamy.chemistry.jhu.edu'>McQueen group</a> at Johns Hopkins University. This webpage started as a personal challenge to learn HTML and CSS, but I realized that it could be a valuable resource to anyone who wants to learn more about my research, career aspirations, or personal interests. Please have a look at my <a href='research.html'>research</a>, and don't hesitate to <a href='contact.html'>contact me</a> if you'd like to chat.
-            </p>
-          <h3>Recent Updates</h3>
-            <p>
-              <ul>
-                <li>
-                  <b>12/11/15</b> Succesfully defended Ph.D. dissertation!
-                </li>
-                <li>
-                  <b>11/16/15</b> Dissertation defense scheduled for Friday, December 11th at 9:00 AM in Bloomberg Hall room 462.
-                </li>
-                <li>
-                  <b>11/14/15</b> Launched a very early beta of my <a href='https://secret-retreat-8259.herokuapp.com/'>location recommendation app.</a>
-                </li>
-                <li>
-                  <b>10/13/15</b> Latest manuscript <a href='http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract'>accepted to Dalton Transactions! (Cover article!!)</a>
-                </li>
-                <li>
-                  <b>9/22/15</b> Migrated to GitHub.
-                </li>
-                <li>
-                  <b>9/20/15</b> New items in <a href="resources.html">Resources</a> section.
-                </li>
-              </ul>
-            </p>
-        </div>
-        <div class="col-md-4">
-          <img src='img/boomheadshot.jpg' width='200' height='200' align=center border='2px black'>
-       </div>
-        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li class="active"><a href="index.html">home</a></li>
+              <li><a href="research.html">research</a></li>
+              <li><a href="resources.html">resources</a></li>-->
+            <li><a data-toggle="modal" data-target="#myModal" href="#myModal">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-<a href="spectra.html"><img src='img/drawing.png' width='320' height='140' alt="What's this cool picture?"></a> 
-  
-  <script src="util/jquery-2.1.3.min.js"></script>
-    <script src="util/bootstrap.js"></script>
-    
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="util/ie10-viewport-bug-workaround.js"></script>
+    </div>
+
+
+	<div class="container">
+		<div class="row">
+			<br><br>
+			<div class="col-md-4 centered">
+			<h2></h2>
+                <img src='img/boomheadshot.jpg' width='250'>
+            </div>
+            <div class="col-md-8">
+            	<h2>Updates&nbsp;<i class="fa fa-graduation-cap"></i><br></h2>
+				<p>
+				I recently completed my Ph.D. at Johns Hopkins University, where I studied the magnetic behavior and chemical reactivity of iridium oxide honeycomb materials. Some of my work in this field was recently <a href="http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract">featured on the cover of Dalton Transactions</a>.
+				<br> I'm currently honing my skills in machine learning, distributed computing and software development by participating in an intensive 8 week data science fellowship in Washington, D.C.
+			</div><!-- col-lg-4 -->
+		</div><!-- row -->
+		<div class="row">
+			<br><br>
+			<div class="col-md-4 centered">
+			<h2></h2>
+			<img src='img/stomping_grounds.png' width='250'>
+			</div><!--col-md-4-->
+			<div class="col-md-8">
+                <h2>Data Science Projects&nbsp;<i class="fa fa-cogs"></i></h2>
+                I'm building an intuitive way to aggregate and interpret geospatial datasets using kernel density estimation and unsupervised machine learning. 
+                <br>
+                <a href="http://stomping-grounds.herokuapp.com">Click here</a> to try a (very early) draft of my webapp, which combines a broad variety of datasets, such as criminal arrests and restaurant locations, to suggest areas of Baltimore city to prospective homebuyers and entrepreneurs.<br>
+                
+            </div>
+		</div><!-- row -->
+		<div class="row">
+		<br><br>
+			<div class="col-md-4 centered">
+				<h2></h2>
+				<img src='img/synthesis.png' width='250' height='250'>
+			</div>
+			<div class="col-md-8">
+				<h2>Resources&nbsp;<i class="fa fa-terminal"></i></h2>
+				<ul>
+					<li>
+						<a href="https://github.com/dvdwllc/tutorials/blob/master/UV-Vis/UV_kinetics_datavis_tutorial.ipynb">Agilent UV/Vis kinetics data visualization and analysis using iPython, Pandas, and SciPy.</a>
+				  	</li>
+				  	<li>
+						<a href="https://github.com/dvdwllc/tutorials/blob/master/PPMS_Curie-Weiss/PPMS_Curie-Weiss.ipynb">PPMS data visualization and curve fitting using iPython, Pandas, and SciPy.</a>
+				  	</li>
+				  	<li>
+						Use <a href="http://jp-minerals.org/vesta/en/">Vesta</a> to visualize Fermi surfaces computed using the Elk electronic structure code. (<a href="FS-convert_instructions.txt">Instructions</a>, <a href='https://github.com/dvdwllc/FermiSurface-Elk-to-Vesta/blob/master/FermiSurface.py'>Python script</a>)
+				  	</li>
+            	</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+		<br><br>
+			<div class="col-md-4 centered">
+				<h2></h2>
+				<a href='http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract'><img src="img/dalton_cover_final.jpg" width='250'></a><br>
+				Cover art for ref. 2.
+			</div>
+			<div class="col-md-8">
+				<h2>Publications&nbsp;<i class="fa fa-institution"></i></h2>
+				<p>
+					<ol>
+						<li>
+							<em>Diffusion-Limited Kinetics in Oxidative Deintercalation Reactions.</em><br>Under review, <em>Nature Communications</em>
+						</li>
+						<li>
+							<em>New Honeycomb Iridium (V) Oxides: NaIrO<sub>3</sub> and Sr<sub>3</sub>CaIr<sub>2</sub>O<sub>9</sub>.</em><br><a href='http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract'>Dalton Transactions <em>44</em>, 20344-51 (2015) (Cover article!)</a>
+						</li>
+						<li>
+							<em>Evolution of Magnetism in the Na<sub>3-d</sub>(Na<sub>1-x</sub>Mg<sub>x</sub>)Ir<sub>2</sub>O<sub>6</sub> Series of Honeycomb Iridates</em><br><a href="http://www.sciencedirect.com/science/article/pii/S0022459614001091">Journal of Solid State Chemistry Volume 224, April 2015, Pages 28-35</a><br>
+						</li>
+						<li>
+							<em>Thermally-activated recombination in one component of (CH<sub>3</sub>NH<sub>3</sub>)PbI<sub>3</sub>/TiO<sub>2</sub> observed by photocurrent spectroscopy</em><br><a href="http://pubs.rsc.org/en/Content/ArticleLanding/2015/CC/C5CC00751H#!divAbstract">Chemical Communications Advance Article, March 2015, DOI: 10.1039/C5CC00751H</a>
+						</li>
+						<li>
+							<em>Evidence for Topologically Protected Surface States and a Superconducting Phase in [Tl<sub>4</sub>](Tl<sub>1-x</sub>Sn<sub>x</sub>)Te<sub>3</sub> Using Photoemission, Specific Heat, and Magnetization Measurements, and Density Functional Theory.</em> <br><a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.017002">Physical Review Letters Volume112, January 2014, page 017002</a>
+						</li>
+						<li>
+							<em>Stacking Variants and Superconductivity in the Bi-O-S System</em><br><a href="http://pubs.acs.org/doi/abs/10.1021/ja4011767">Journal of the American Chemical Society Volume 135, March 2013 pages 5372-5374</a>
+						</li>
+						<li>
+							<em>Source attribution of climatically important aerosol properties measured at Paposo (Chile) during VOCALS</em><br><a href="http://www.atmos-chem-phys.net/10/10789/2010/acp-10-10789-2010.html">Journal of Atmospheric and Chemical Physics Volume 10, November 2010, pages 10789-10801</a>
+						</li>
+					</ol>
+				</p>
+			</div>
+		</div><!--row-->
+	</div><!-- container -->
+
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href="mailto:davidcwall@gmail.com"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;
+		        <a href="http://linkedin.com/in/davidcwallace"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+		        <a href="http://github.com/dvdwllc"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
+		        <a href="http://facebook.com/dvdwllc"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+
+	<!-- MODAL FOR CONTACT -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">Contact</h4>
+	      </div>
+	      <div class="modal-body">
+		        <div class="row centered">
+		        	<p>Drop me a line!<br>
+		        		<a href="mailto:davidcwall@gmail.com"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;
+		        		<a href="http://linkedin.com/in/davidcwallace"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+		        		<a href="http://github.com/dvdwllc"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
+		        		<a href="http://facebook.com/dvdwllc"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+		        	</p>
+		        	
+		        </div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
