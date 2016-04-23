@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><i class="fa fa-i-cursor"></i>dvdwllc</a>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-i-cursor"></i>dvdwllc</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -55,131 +55,94 @@
 			<br>
 			<div class="col-md-12 centered">
 			    <h1>
-                    David C. Wallace, Ph.D.
+                    Politivec
                 </h1>
-            </div>
-		</div><!-- row -->
-
-		<div class="row">
-			<div class="col-md-4 centered">
-                <img src='img/boomheadshot.jpg' width='250'>
-            </div>
-            <div class="col-md-8">
-				<p>
-				    I recently completed my graduate research at Johns Hopkins University, where I studied the magnetic behavior and chemical reactivity of iridium oxide honeycomb materials. Some of my work in this field was recently <a href="http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract">featured on the cover of Dalton Transactions</a>.
-				</p>
-                <p>
-                    After leaving JHU, I participated in an 8 week data science fellowship at <a href="https://www.thedataincubator.com/">The Data Incubator</a>, where I sharpened my skills in machine learning, algorithms, natural language processing and distributed computing. I'm now working as a freelance data consultant and actively seeking permanent employment. If you have a project you'd like me to tackle, or an employment opportunity you'd like to discuss, please don't hesitate to get in touch!
-				</p>
-			</div><!-- col-lg-4 -->
-		</div><!-- row -->
-
-		<div class="row">
-			<div class="col-md-12 centered">
-			    <h1>
-                    Data Science Projects&nbsp;<i class="fa fa-cogs"></i>
-                </h1>
-            </div>
-		</div><!-- row -->
-
-        <div class="row">
-
-			<div class="col-md-4 centered">
-			    <img src='img/politivec.png' width='250'>
-			</div><!--col-md-4-->
-
-			<div class="col-md-8">
                 <h3>
-                    Politivec: Text mining the 2016 presidential debates
+                    NLP and machine learning applied to the 2016 presidential debates
                 </h3>
                 <p>
-                    I've been applying natural language processing and machine learning techniques to the 2016 presidential debates. Check out my new blog post on the topic, and stay tuned for an interactive feature!
+                    <img src="img/politivec/screenshot.png">
                 </p>
             </div>
-
-		</div><!-- row -->
-
-		<div class="row">
-            <br><br>
-			<div class="col-md-4 centered">
-			<img src='img/stomping_grounds.png' width='250'>
-			</div><!--col-md-4-->
-			<div class="col-md-8">
-                <h3><a href="http://stomping-grounds.herokuapp.com">Stomping Grounds</a></h3>
-                <p>
-                I built an intuitive way to aggregate and interpret geospatial datasets using kernel density estimation and unsupervised machine learning. Stomping Grounds combines a broad variety of datasets, such as criminal arrests and restaurant locations, to suggest areas of Baltimore city to prospective homebuyers and entrepreneurs.
-                </p>
-                <br>
-            </div><!--col-md-8-->
-        </div><!--row-->
-
-		<div class="row">
-			<div class="col-md-12 centered">
-			<h1>
-                Resources&nbsp;<i class="fa fa-terminal"></i>
-            </h1>
-		</div><!-- row -->
-
-		<div class="row">
-			<div class="col-md-4 centered">
-				<img src='img/synthesis.png' width='250' height='250'>
-			</div>
-			<div class="col-md-8">
-                <br>
-				<ul>
-					<li>
-						<a href="https://github.com/dvdwllc/tutorials/blob/master/UV-Vis/UV_kinetics_datavis_tutorial.ipynb">Agilent UV/Vis kinetics data visualization and analysis using iPython, Pandas, and SciPy.</a>
-				  	</li>
-				  	<li>
-						<a href="https://github.com/dvdwllc/tutorials/blob/master/PPMS_Curie-Weiss/PPMS_Curie-Weiss.ipynb">PPMS data visualization and curve fitting using iPython, Pandas, and SciPy.</a>
-				  	</li>
-				  	<li>
-						Use <a href="http://jp-minerals.org/vesta/en/">Vesta</a> to visualize Fermi surfaces computed using the Elk electronic structure code. (<a href="FS-convert_instructions.txt">Instructions</a>, <a href='https://github.com/dvdwllc/FermiSurface-Elk-to-Vesta/blob/master/FermiSurface.py'>Python script</a>)
-				  	</li>
-            	</ul>
-			</div>
-		</div><!--row-->
-
+        </div>
         <div class="row">
-            <div class="col-md-12 centered">
-                <h1>
-                    Publications&nbsp;<i class="fa fa-institution"></i>
-                </h1>
+            <div class="col-md-10 col-md-offset-1">
+                <p>
+                    <em>Disclaimer: the idea that a person's political ideology can be accurately summarized in a single number is dubious to say the least, and the curse of dimensionality is definitely at play in my analysis. These results--and anything involved with election politics, for that matter--should be viewed with a healthy amount of skepticism. Enjoy!</em>
+                </p>
+                <h3>Overview</h3>
+                <p>
+                    It's election season, and for most of us that means an endless stream of fundraising emails in our inboxes and a constant barrage of political soundbytes from our radios and TV's. For me, election season has also meant a lot of time spent writing python code and training new machine learning models. My most recent undertaking has been to build a predictive model to estimate the political ideology of a candidate or statement based on a chunk of text. I'll show some interesting results of this model first, and then dive into the details below for anyone who wants to know more.
+                </p>
+                <p>
+                Below, I present four examples of sentences and terms that can be fed into the model, along with images showing the ideology that the model predicts. You can feed absolutely any english text into the model and get a result, though I doubt it will give any insight about non-political speech. I'm currently working on an interactive website that will let you try your own text, so stay tuned for further updates!
+                </p>
+            </div>
+        <div>
+        
+        <div class="row">
+        	<div class="col-md-6 centered">
+        		<img src="img/politivec/liberal.png" width="300px">
+        		<p>
+        			"Break up the big banks on Wall Street and provide universal health care to all American citizens."
+        		</p>
+        	</div>
+        	<div class="col-md-6 centered">
+        		<img src="img/politivec/conservative.png" width="300px">
+        		<p>
+        			"Barack Obama has been the worst president in America's history."
+        		</p>
+        	</div>
+        </div>
+        
+        <div class="row">
+        	<div class="col-md-6 centered">
+        		<img src="img/politivec/ACA.png" width="300px">
+        		<p>
+        			"Affordable Care Act"
+        		</p>
+        	</div>
+        	<div class="col-md-6 centered">
+        		<img src="img/politivec/obamacare.png" width="300px">
+        		<p>
+        			"Obamacare"
+        		</p>
+        	</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>Discussion and methodology</h3>
+                <p>
+                    One of the things that strikes me when I watch these debates is how broad the political gap between Republican and Democratic candidates has become, even in just the last 8 years. Though unfortunate and counterproductive, it's not at all surprising to see this massive divide given the <a href='https://www.washingtonpost.com/news/wonk/wp/2015/04/23/a-stunning-visualization-of-our-divided-congress/'>chasm that has been forming in congress along party lines in the last half century</a>. Though I'd love to find a way to fix that problem and force our elected officials to work together, we'll probably need to wait for comprehensive campaign finance reform. In the meantime, I figured it would be fun to turn the presidential debates into a data science project!
+                </p>
+                <p>
+                    Thanks to the American Presidency Project at the University of California, Berkeley, detailed transcripts from every presidential debate from the last few decades are <a href='http://www.presidency.ucsb.edu/debates.php'>publicly available online.</a> To collect these debates, I wrote a python script that gathers all relevant transcript url's and then scrapes the text of each debate (sorry for slamming your servers, UCSB) and organizes statements by candidate and year. This resulted in a big table with rows that look like:
+                    <ul>
+                        <li>Clinton_2016,"Blah blah Senator Sanders...blah...equal pay for equal work...gun control blah..."</li>
+                        <li>Sanders_2016,"Big banks blah...top 1 percent...free college education blah blah blah..."</li>
+                        <li>Trump_2016,"We're gonna build a great big wall, and Mexico's gonna pay for it..."</li>
+                    </ul>
+                </p>
+                <p>
+                    <img src="img/politivec/statement_table.png" align="middle" ><br>
+                    In order to turn this large amount of text--about 350 thousand words for 2015 and 2016 alone--into something that a computer can process, I used a natural language processing technique known as "Text Frequency-Inverse Document Frequency" ("Tf-Idf"). This splits the text into individual chunks called "n-grams" that can then be quantified by an integer number of occurrences in each statement, normalized by the number of times they occur in the entire corpus. As an example, the sentence <em>My dog is my friend.</em> can be broken down into the following 1- and 2-grams: <em>my:2, dog:1, is:1, friend:1, my dog:1, dog is: 1, is my: 1, my friend:1</em>. If this statement were part of a much larger work, each of these n-gram counts would be normalized by their frequency in the full text. Thus after applying the Tf-Idf transformation to the presidential debates data set, each candidate's collection of statements becomes a vector of numbers that is related to the number of times they uttered each word or combination of words. These vectors alone could be used to perform unsupervised machine learning analyses on the debate texts, <a href='http://www.realclearpolitics.com/articles/2015/10/29/text-mining_the_debate_trump_was_less_trump-y_128594.html'>as others have done recently.</a>
+                </p>
+                <p>
+                    Though we're stuck with a two-party system for the foreseeable future, I think it's clear that, in general, it's not terribly informative to classify someone's political beliefs as simply red or blue. There is a broad ideological spectrum between liberal and conservative that is filled with nuance and common ground, and I wanted to take this into account in my model. To that end, I collected ideological spectrum ratings for all of the 2016 presidentail candidates from <a hred='http://www.huffingtonpost.com/findthebest-/every-2016-candidate-from_b_7562176.html'>this HuffPo article.</a> Taken together, the debate Tf-Idf vectors and ideology ratings form a basis on which to train a machine learning model. I tried a broad variety of dimensionality reduction and regression techniques, but most of that is beyond the scope of this post. In the end, after hours of cross-validated grid searches, I arrived at a pipeline with the following steps:
+                    <ol>
+                        <li>Tf-Idf Vectorizer (minimum document frequency: 0.4, maximum document frequency: 0.9, n-gram range: 1 to 2)</li>
+                        <li>Truncated Singular Value Decomposition (100 components)</li>
+                        <li>Linear regression (no regularization)</li>
+                    </ol>
+                    I also trained a random forest regressor with 100 estimators in a second pipeline with a 55 component SVD. This was robust to overfitting in cross-validation trials, and my final model averages the results of the linear regression and random forests pipelines. The model performs well on the small training set, with chi-square values of up to 0.96 in threefold cross validation trials. For a more detailed description of the models and cross-validation approaches I applied, consult my github repository.
+                </p>
+                <p>
+                    I'll be putting together a more in-depth discussion of this analysis in the coming weeks, and also creating an interactive web page where you can try the model out for yourself. Check back soon for updates!
+                </p>
+            </div>
 		</div><!-- row -->
 
-		<div class="row">
-			<div class="col-md-4 centered">
-				<a href='http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract'><img src="img/Dalton_cover_final.jpg" width='250'></a><br>
-				Cover art for ref. 2.
-			</div>
-			<div class="col-md-8">
-				<p>
-					<ol>
-						<li>
-							<em>Diffusion-Limited Kinetics in Oxidative Deintercalation Reactions.</em><br>Under review, <em>Nature Communications</em>
-						</li>
-						<li>
-							<em>New Honeycomb Iridium (V) Oxides: NaIrO<sub>3</sub> and Sr<sub>3</sub>CaIr<sub>2</sub>O<sub>9</sub>.</em><br><a href='http://pubs.rsc.org/en/content/articlelanding/2015/dt/c5dt03188e#!divAbstract'>Dalton Transactions <em>44</em>, 20344-51 (2015) (Cover article!)</a>
-						</li>
-						<li>
-							<em>Evolution of Magnetism in the Na<sub>3-d</sub>(Na<sub>1-x</sub>Mg<sub>x</sub>)Ir<sub>2</sub>O<sub>6</sub> Series of Honeycomb Iridates</em><br><a href="http://www.sciencedirect.com/science/article/pii/S0022459614001091">Journal of Solid State Chemistry Volume 224, April 2015, Pages 28-35</a><br>
-						</li>
-						<li>
-							<em>Thermally-activated recombination in one component of (CH<sub>3</sub>NH<sub>3</sub>)PbI<sub>3</sub>/TiO<sub>2</sub> observed by photocurrent spectroscopy</em><br><a href="http://pubs.rsc.org/en/Content/ArticleLanding/2015/CC/C5CC00751H#!divAbstract">Chemical Communications Advance Article, March 2015, DOI: 10.1039/C5CC00751H</a>
-						</li>
-						<li>
-							<em>Evidence for Topologically Protected Surface States and a Superconducting Phase in [Tl<sub>4</sub>](Tl<sub>1-x</sub>Sn<sub>x</sub>)Te<sub>3</sub> Using Photoemission, Specific Heat, and Magnetization Measurements, and Density Functional Theory.</em> <br><a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.017002">Physical Review Letters Volume112, January 2014, page 017002</a>
-						</li>
-						<li>
-							<em>Stacking Variants and Superconductivity in the Bi-O-S System</em><br><a href="http://pubs.acs.org/doi/abs/10.1021/ja4011767">Journal of the American Chemical Society Volume 135, March 2013 pages 5372-5374</a>
-						</li>
-						<li>
-							<em>Source attribution of climatically important aerosol properties measured at Paposo (Chile) during VOCALS</em><br><a href="http://www.atmos-chem-phys.net/10/10789/2010/acp-10-10789-2010.html">Journal of Atmospheric and Chemical Physics Volume 10, November 2010, pages 10789-10801</a>
-						</li>
-					</ol>
-				</p>
-			</div>
-		</div><!--row-->
 	</div><!-- container -->
 
 	<!-- FOOTER -->
